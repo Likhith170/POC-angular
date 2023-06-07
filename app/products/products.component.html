@@ -1,0 +1,28 @@
+<div >
+  <h1 class="text-center">Customers <span style="color: palevioletred;">Favourites </span><i class='fas fa-heart' style="color:palevioletred;"></i></h1><br>
+  <div class="bagbox" >
+      <div *ngFor="let bg of bagData;index as i" class="item">
+          <div class="row" >
+              <img height="210px" width="200px" src="{{bg.bagImg}}" />
+              <h2 style="text-align: center; font-size: 18px;">{{bg.bagName}}</h2>
+              <p style="text-align: center;">{{bg.bagPrice | currency:'INR'}}</p><br>
+              <!--<button class="buybtn"  (click)=addtoCart(bg)>Buy Now</button>-->
+              <a class="buybtn"   (click)="addToCart(bg)">Add to Cart</a>
+          </div>
+      </div>
+  </div>
+
+  <div >
+    <br>
+    <div class="bagbox" >
+        <div *ngFor="let bg of bagData1;index as i" class="item">
+            <div class="row" >
+                <img height="200px" width="200px" src="{{bg.bagImg}}" />
+                <h2 style="text-align: center; font-size: 18px;">{{bg.bagName}}</h2>
+                <p style="text-align: center;">{{bg.bagPrice | currency:'INR'}}</p><br>
+                <!--<a class="buybtn" (click)="addtoCart(bg)">Buy Now</a>-->
+                <a class="buybtn"   (click)="addToCart(bg)">Add to Cart</a>
+
+            </div>
+        </div>
+    </div><br><br><br>

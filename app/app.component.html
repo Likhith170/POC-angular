@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header >
+  <nav  >
+    <ul   style="list-style: none; padding: 0;">
+      <li class="buttons"><a  routerLink="/home" href="#home" style="color: white;">Home <i class='fas fa-home'></i></a></li>&nbsp;&nbsp;
+      <li class="buttons"><a routerLink="/products" href="#products" style="color: white;">Handbags <i class="fa fa-shopping-bag"></i> </a></li>&nbsp;&nbsp;
+      <li class="buttons"><a routerLink="/about" href="#about" style="color: white;">About <i class="fas fa-info-circle"></i> </a></li>&nbsp;&nbsp;
+      <li  class="buttons"><a routerLink="/features" href="#features" style="color: white;">Features <i class="fas fa-star"></i> </a></li>&nbsp;&nbsp;
+      <li class="buttons"><a routerLink="/contact" href="#contact" style="color: white;">Contact <i class="fas fa-envelope"></i></a></li>&nbsp;&nbsp;
+      <li  class="buttonscart"><a routerLink="/cart" style="color: white;">Cart <i class="fas fa-shopping-cart"></i> <span class="item-count" *ngIf="(cartItemCount$ | async) > 0">{{ cartItemCount$ | async }}</span></a></li>
+    </ul>
+  </nav>
+</header>
+</body>
+
+<router-outlet></router-outlet>
+  <footer >
+    <p style="text-align: center;">
+      &copy; 2023 Your Company. All rights reserved.
+      <span style="margin-left: 100px;">
+        <i class='fab fa-facebook'></i>
+      </span>
+      <span style="margin-left: 10px;">
+        <i class='fab fa-instagram'></i>
+      </span>
+      <span style="margin-left: 10px;">
+        <i class='fab fa-whatsapp'></i>
+      </span>
+      <span style="margin-left: 10px;">
+        <i class='fab fa-youtube'></i>
+      </span>
+    </p>
+    
+  </footer>
+
+  
+ 
+

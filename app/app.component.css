@@ -1,0 +1,57 @@
+body, h1, h2, h3, p, ul, li, form {
+    margin-left: 0px;
+    padding: 0;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  header {
+    background-color: #c14646;
+    padding: 10px;
+    text-align: right;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+   .buttons:hover {
+    background-color: black;
+    
+    transform: scale(1.2);
+
+   }
+
+   .buttonscart:hover {
+    background-color: black;
+
+   }
+
+  /* Footer */
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .fab fa-facebook{
+    text-align: end;
+  }
+
+  .item-count {
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 50%;
+  }
